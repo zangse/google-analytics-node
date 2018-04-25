@@ -22,7 +22,6 @@
     "express": "~4.15.2",
     "googleapis": "^27.0.0",
     "path": "^0.12.7",
-    "pm2": "^2.4.6",
     "redis": "^2.8.0",
     "supervisor": "^0.12.0"
   },
@@ -35,8 +34,12 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git@github.com:zangse/google-analytics-node.git"
+    "url": "git+ssh://git@github.com/zangse/google-analytics-node.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zangse/google-analytics-node/issues"
+  },
+  "homepage": "https://github.com/zangse/google-analytics-node#readme"
 }
