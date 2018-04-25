@@ -1,0 +1,42 @@
+{
+  "name": "google-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon --harmony index.js",
+    "start": "cross-env NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'google-analytics'",
+    "stop": "cross-env NODE_ENV=production pm2 stop index.js --name 'google-analytics'",
+    "restart": "cross-env NODE_ENV=production pm2 restart index.js --node-args='--harmony' --name 'google-analytics'"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "babel-register": "^6.24.0",
+    "body-parser": "^1.18.1",
+    "cross-env": "^5.0.1",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "googleapis": "^27.0.0",
+    "path": "^0.12.7",
+    "pm2": "^2.4.6",
+    "redis": "^2.8.0",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0"
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zangse/google-analytics-node.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
