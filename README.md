@@ -72,6 +72,20 @@ router.get('/pageTimeData',...);//24小时访问数统计
 router.get('/pageAreaData',..);//地区统计
 //可以自由设置更多数据
 ```
+### use
+```
+git clone git@github.com:zangse/google-analytics-node.git
+cd google-analytics-node
+//更换key和viewId和端口号(xxx)
+npm install
+node index.js
+//在浏览器访问  
+http:localhost:xxx/api/google/userChart
+```
+#### 本地测试和线上部署
+目前由于墙的原因，google服务无法访问,我本地数据，是使用了工具为node进程开了代理。(mac端`Proxifier`)
+线上部署也同样需要解决墙的问题，最好是把这个小项目托管到可以访问google服务的服务器上。
+
 至于文章开头的图表，来自于接口返回的数据，经过前端处理后使用echart展示的结果。
 如有疑问，可以在项目里提issues。如有遗漏或错误的地方，欢迎指正。
 
