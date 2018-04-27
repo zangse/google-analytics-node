@@ -22,7 +22,7 @@
 [戳这里](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#metrics)
 谷歌提供了api接口，供你自由配置指标来查询你的网站访问数据，并且提供了[各种客户端库](https://developers.google.com/analytics/devguides/reporting/realtime/v3/libraries)的查询支持。
 #### 4.api调用demo
-本篇使用的后台技术是NodeJs,使用的是express框架+redis技术实现。2018年4月27日星期五
+本篇使用的后台技术是NodeJs,使用的是express框架+redis技术实现。
 项目目录结构，项目代码放在[github](https://github.com/zangse/google-analytics-node)上，适当修改配置，安装依赖，就可以应用于自己的网站了。
 ```
 ├── README.md
@@ -88,4 +88,3 @@ http:localhost:xxx/api/google/userChart
 
 至于文章开头的图表，来自于接口返回的数据，经过前端处理后使用echart展示的结果。
 如有疑问，可以在项目里提issues。如有遗漏或错误的地方，欢迎指正。
-
