@@ -1,10 +1,12 @@
 ### google-analytics-node
-
+![image](https://github.com/zangse/google-analytics-node/blob/master/screenshots/WX20180427-104057.png)
+![image](https://github.com/zangse/google-analytics-node/blob/master/screenshots/WX20180427-104111.png)
 #### 1.注册谷歌分析
 注:以下操作基本需要翻墙，请自备梯子。
 登录你的谷歌账户,注册[谷歌分析](http://www.google.cn/intl/zh-CN_ALL/analytics/learn/setupchecklist.html)
+![image](https://github.com/zangse/google-analytics-node/blob/master/screenshots/WX20180427-102210.png)
 然后设置自己的账户基本信息
-
+![image](https://github.com/zangse/google-analytics-node/blob/master/screenshots/WX20180427-102256.png)
 获取跟踪Id,同意协议。
 #### 2.给网站加上谷歌分析代码
 登陆后便有全站跟踪代码，复制带有跟踪Id的代码到你的项目里。
@@ -46,9 +48,12 @@
 使用redis的部分是为了缓存access_token和部分数据，目前把部分接口的数据先缓存23小时(不想去频繁请求接口)。
 #### 5.配置您的个人项目
 项目里需要配置的地方，第一个是数据视图id，这个在创建账户的时候就生成了，在账户管理的`数据视图`里可以看到，点击`数据视图设置`，就可以获取数据视图id
+```
   viewId: 'ga:你的数据视图id'
+```
 ##### 设置key
 打开[谷歌api控制台](https://console.developers.google.com/)，先创建一个项目，然后点击`启用API`,搜索google analytics，启用`Google Analytics Reporting API`，再启用`Analytics API`。
+![image](https://github.com/zangse/google-analytics-node/blob/master/screenshots/WX20180427-123143.png)
 ##### 创建凭据
 然后创建凭据，点击 `凭据`-->`创建凭据`-->选择`服务账号密钥`-->选择新的服务账号，并设置角色，输入名称，点击`创建`，保存您的密钥文件。
 将这个key复制到项目的`app/config`目录下并修改名称为 `key.json`。
